@@ -12,7 +12,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="<c:url value="/img/favicon.ico"></c:url>">
 
-	<title><tiles:insertAttribute name="title" /></title>
+	<title>Home Page</title>
 
 	<link href="<c:url value="/css/bootstrap.min.css"></c:url>" rel="stylesheet">
 	<link href="<c:url value="/css/font-awesome.min.css"></c:url>" rel="stylesheet">
@@ -23,12 +23,10 @@
 
 </head>
 <body>
-	<%--<section class="container">--%>
-		<%--<div class="pull-right" style="padding-right: 50px">--%>
-			<%--<a href="?language=en">English</a>|<a href="?language=nl">Dutch</a> --%>
-			<%--<a href="<c:url value="/logout"/>">Logout</a>--%>
-		<%--</div>--%>
-	<%--</section>--%>
+	<div class= "jumbotron">
+		<h1> ${greeting}</h1>
+        <p> ${hello}</p>
+	</div>
 	<tiles:insertAttribute name="navigation" />
 	<div class="container wrapper">
 		<div class="row">
